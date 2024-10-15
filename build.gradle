@@ -5,6 +5,11 @@ buildscript {
 
 plugins {
     id 'binary-compatibility-configuration'
+    id 'org.jetbrains.kotlinx.kover' version '0.8.3'
+}
+
+subprojects {
+    apply plugin: 'org.jetbrains.kotlinx.kover'
 }
 
 allprojects {
@@ -13,3 +18,4 @@ allprojects {
         mavenCentral()
     }
 }
+

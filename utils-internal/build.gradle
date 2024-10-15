@@ -2,12 +2,13 @@ plugins {
     id 'mpp-configuration'
     id 'publish-configuration'
     id 'detekt-configuration'
+    id 'org.jetbrains.kotlinx.kover' version '0.8.3'
 }
 
 android {
     namespace "com.badoo.reaktive.utils"
 }
-
+apply plugin: 'org.jetbrains.kotlinx.kover'
 kotlin {
     sourceSets {
         commonTest {
